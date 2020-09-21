@@ -32,12 +32,17 @@ input[type=reset],input[type=submit]{-webkit-appearance:button;cursor:pointer;}b
 .container {
   display:  flex;
   border: 10px solid goldenrod;
-  min-height: 100vh;
+  height: 100vh;
   /**
   @property: flex-direction
   @options: row(default), column, column-reverse, row-reverse
   Main axis will always be along the flex-direction;
   And the cross axis will always be along the opposite direction
   **/
-  flex-direction: column-reverse;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+
+.box {
+  width: 33.333333%;
 }
