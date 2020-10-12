@@ -27,16 +27,19 @@ input[type=reset],input[type=submit]{-webkit-appearance:button;cursor:pointer;}b
 .box9 { background:#2ecc71;}
 .box10 { background:#16a085;}
 
-
 /* We start writing out flexbox here. The above is just page setup */
 .container {
   display:flex;
 }
 
 .box {
-  flex:1;
+  flex: 1;
 }
 
 .box2 {
-  flex:2;
+  flex: 2;
+}
+
+.box5 {
+  flex: 3;
 }
