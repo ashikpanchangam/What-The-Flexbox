@@ -5,7 +5,6 @@ input[type=reset],input[type=submit]{-webkit-appearance:button;cursor:pointer;}b
 /* Box-sizing border-box */
 * { -moz-box-sizing: border-box; -webkit-box-sizing: border-box; box-sizing: border-box; }
 
-
 /* Some default styles to make each box visible */
 .box {
   color:white;
@@ -27,18 +26,29 @@ input[type=reset],input[type=submit]{-webkit-appearance:button;cursor:pointer;}b
 .box9 { background:#2ecc71;}
 .box10 { background:#16a085;}
 
-
 /* We start writing out flexbox here. The above is just page setup */
 .container {
   display:flex;
 }
 
 .box1 {
-  flex:10 5 400px;
+  /* when there is extra space, grow 
+  10 times as much as the box2 */
+  /* flex-grow: 10; */
+
+  /* when the combined width of box1 and box2
+  is less than 600px, shrink 5 times as much as box2 */
+  /* flex-shrink: 5; */
+
+  /* flex-basis: 300px; */
+
+  /* shorthand for the above */
+  flex: 10 5 300px;
 }
 
 .box2 {
-  flex:1 1 400px;
+  /* flex-grow: 1;
+  flex-shrink: 1;
+  flex-basis: 300px; */
+  flex: 1 1 300px;
 }
-
-
